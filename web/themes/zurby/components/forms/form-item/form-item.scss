@@ -27,16 +27,16 @@
 
 .form-item,
 %form-item {
-  @include margin(1 0);
+  margin: 1em 0;
 
   // The part of the label that indicates a required field.
   &__required {
-    color: color(form-error);
+    color: map-get($foundation-palette, alert);
   }
 
   // The descriptive help text (separate from the label).
   &__description {
-    @include font-size(s);
+    font-size: $small-font-size;
   }
 
   &--inline {

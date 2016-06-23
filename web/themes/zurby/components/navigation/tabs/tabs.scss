@@ -24,8 +24,8 @@
   // The line height of a tab.
   $tab-height: 1.25;
 
-  @include margin((2 - $tab-height) 0 0);
-  @include line-height($tab-height);
+  margin: 1em 0 0;
+  line-height: $tab-height;
   @if support-for(ie, 9) {
     // IE 9 and earlier don't understand gradients.
     border-bottom: 1px solid color(tabs-border) \0/ie;
@@ -66,7 +66,7 @@
   }
 
   &__tab-link {
-    @include padding(0 1);
+    padding: 0 1em;
     display: block;
     text-decoration: none;
     transition: color .3s, background .3s, border .3s;
@@ -90,20 +90,20 @@
   }
 
   &--secondary {
-    @include margin-top(1);
-    @include font-size(s);
+    margin-top: 1em;
+    fonz-size: $small-font-size;
     background-image: none;
   }
 
   // When secondary tabs appear directly after primary tabs.
   & + &--secondary,
   & + h2 + &--secondary {
-    @include margin-top(0);
+    margin-top: 0;
     background-image: linear-gradient(to top, color(tabs-border) 1px, transparent 1px);
   }
 
   &--secondary &__tab {
-    @include margin((2 - $tab-height)/2 3px);
+    margin: $tab-height 3px;
     border: 0;
     background: transparent;
 
@@ -118,7 +118,7 @@
 
   &--secondary &__tab-link {
     border: 1px solid color(tabs-border);
-    border-radius: $base-line-height;
+    border-radius: $global-lineheight;
     color: color(tab-secondary);
     background: lighten(color(tab-bg), 8%);
     letter-spacing: normal;

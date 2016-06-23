@@ -17,7 +17,7 @@
     position: fixed;
     visibility: hidden;
     margin-top: 0;
-    background-color: color(body-bg);
+    background-color: $body-background;
 
     &.is-sticky,
     &--is-sticky {
@@ -47,7 +47,7 @@
     background-color: color(row-stripe);
 
     &:nth-child(even) {
-      background-color: color(body-bg);
+      background-color: $body-background;
     }
 
     &.is-active,

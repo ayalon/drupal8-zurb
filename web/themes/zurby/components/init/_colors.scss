@@ -12,6 +12,7 @@
 // Style guide: sass.colors
 
 // Define the default color scheme's color names.
+
 $chroma: define-default-color-scheme('branding', 'The site\'s main colors. Can be used to define colors in other color schemes.');
 
 $chroma: add-colors((
@@ -31,8 +32,8 @@ $chroma: add-colors((
 $chroma: define-color-scheme('functional', 'Colors used by functional parts of the design.');
 $chroma: add-colors('functional', (
   // Colors used in the main content area.
-  text:                   'black',
-  text-bg:                'white',
+  text:                   $body-font-color,
+  text-bg:                $body-background,
 
   link:                   'blue',
   link-visited:           ('blue' darken 20%),
@@ -45,7 +46,7 @@ $chroma: add-colors('functional', (
   autocomplete-select:    'white',
   autocomplete-select-bg: 'blue',
 
-  body-bg:                'text-bg',
+  //body-bg:                'text-bg',
 
   button:                 'text',
   button-disabled:        'grey',
@@ -72,6 +73,7 @@ $chroma: add-colors('functional', (
   skip-link:              'white',
   skip-link-bg:           'grey-dark',
 
+  // TODO REDUNDANT COLORS
   status:                 'blue',
   status-bg:              (status lighten 62%),
   status-highlight:       text,

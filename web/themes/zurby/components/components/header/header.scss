@@ -39,7 +39,7 @@
   &__site-link {
     &:link,
     &:visited {
-      color: color(text);
+      color: $body-font-color;
       text-decoration: none;
     }
 

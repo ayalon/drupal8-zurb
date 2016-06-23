@@ -46,8 +46,8 @@ options.sass = {
     options.rootPath.theme + 'libraries/foundation-sites/scss',
     options.rootPath.theme + 'libraries/motion-ui/src',
     // options.rootPath.project + 'node_modules/breakpoint-sass/stylesheets',
-    // options.rootPath.project + 'node_modules/chroma-sass/sass',
-     options.rootPath.project + 'node_modules/support-for/sass',
+    options.rootPath.project + 'node_modules/chroma-sass/sass',
+    options.rootPath.project + 'node_modules/support-for/sass'
     // options.rootPath.project + 'node_modules/typey/stylesheets',
     // options.rootPath.project + 'node_modules/zen-grids/sass'
   ],

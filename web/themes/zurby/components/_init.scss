@@ -22,12 +22,23 @@
 //
 // Style guide: sass.init
 
-
-// The following Sass functions/mixins are required to generate some variables'
-// values, so we load them first.
-@import 'breakpoint';
 @import 'chroma/functions';
 
+
+// Zurb Foundation Core
+@import 'foundation';
+@import 'motion-ui';
+
+// Set flex to true to enable the new Foundation 6 flex grid.
+$flex: false;
+@include foundation-everything($flex);
+
+@include motion-ui-transitions;
+@include motion-ui-animations;
+
+
+// Setting up colors and variables
+@import 'init/zurb_settings';
 @import 'init/colors';
 @import 'init/variables';
 
@@ -50,10 +61,6 @@
 @import 'chroma/kss';
 // Add support-for to manage normalize-scss' browser support.
 @import 'support-for';
-// Add typey to manage font sizes and margins.
-@import 'typey';
-// Add the Zen Grids responsive layout mixins.
-@import 'zen-grids';
 
 
 // Mixins

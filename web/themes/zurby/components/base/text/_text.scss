@@ -16,18 +16,7 @@
 // Style guide: base.text.abbr
 
 abbr[title] {
-  // Remove the bottom border in Firefox <40.
-  border-bottom: 0;
-  // Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
-  text-decoration: underline;
-  text-decoration: underline dotted;
 
-  @media print {
-    // Add visible title after abbreviations.
-    &:after {
-      content: ' (' attr(title) ')';
-    }
-  }
 }
 
 // Bold
@@ -48,14 +37,13 @@ abbr[title] {
 
 b,
 strong {
-  font-weight: inherit;
+
 }
 
 // sass-lint:disable no-mergeable-selectors
 strong,
 b {
-  // Add the correct font weight in Chrome, Edge, and Safari.
-  font-weight: bolder;
+
 }
 // sass-lint:enable no-mergeable-selectors
 
@@ -87,11 +75,7 @@ code,
 kbd,
 samp,
 var {
-  // Correct the inheritance and scaling of font size in all browsers.
-  // The font-family value ends with ", serif".
-  @include typeface(monospace);
-  // Correct the odd `em` font sizing in all browsers.
-  font-size: 1em;
+
 }
 
 // Deleted text
@@ -160,9 +144,7 @@ ins {
 // Style guide: base.text.mark
 
 mark {
-  // Add the correct background and color in IE <10.
-  background-color: color(mark-bg);
-  color: color(text);
+
 }
 
 // Quote
@@ -200,8 +182,7 @@ s {
 // Style guide: base.text.small
 
 small {
-  // Add the correct font size in all browsers.
-  @include font-size(s);
+
 }
 
 // Superscript / Subscript
@@ -215,20 +196,15 @@ small {
 
 sub,
 sup {
-  // Prevent `sub` and `sup` elements from affecting the line height in
-  // all browsers.
-  @include font-size(xs);
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
+
 }
 
 sub {
-  bottom: -.25em;
+
 }
 
 sup {
-  top: -.5em;
+
 }
 
 // Underlined text
