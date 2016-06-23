@@ -1,0 +1,14 @@
+uuid: 6399f00d-ed4f-4e37-bd90-3f27a52ef535
+name: 'Drupal 8 Zurb'
+mail: info@ayalon.ch
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

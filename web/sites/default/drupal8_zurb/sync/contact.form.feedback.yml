@@ -1,0 +1,12 @@
+uuid: 0c01e373-ab5c-45f0-afd0-757fd8cbe5c6
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: c4zaT5cyPxuTXI6JOWt3qRtMvICT9tHB6d9a5VG-CmQ
+id: feedback
+label: 'Website feedback'
+recipients:
+  - info@ayalon.ch
+reply: ''
+weight: 0
