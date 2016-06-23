@@ -20,8 +20,8 @@ var options = {};
 // accordingly.
 options.rootPath = {
   project     : __dirname + '/',
-  styleGuide  : __dirname + '/styleguide/',
-  theme       : __dirname + '/'
+  styleGuide  : __dirname + '/web/styleguide/',
+  theme       : __dirname + '/web/themes/zurby/'
 };
 
 options.theme = {
@@ -43,11 +43,13 @@ options.sass = {
   importer: importOnce,
   includePaths: [
     options.theme.components,
-    options.rootPath.project + 'node_modules/breakpoint-sass/stylesheets',
-    options.rootPath.project + 'node_modules/chroma-sass/sass',
-    options.rootPath.project + 'node_modules/support-for/sass',
-    options.rootPath.project + 'node_modules/typey/stylesheets',
-    options.rootPath.project + 'node_modules/zen-grids/sass'
+    options.rootPath.theme + 'libraries/foundation-sites/scss',
+    options.rootPath.theme + 'libraries/motion-ui/src',
+    // options.rootPath.project + 'node_modules/breakpoint-sass/stylesheets',
+    // options.rootPath.project + 'node_modules/chroma-sass/sass',
+     options.rootPath.project + 'node_modules/support-for/sass',
+    // options.rootPath.project + 'node_modules/typey/stylesheets',
+    // options.rootPath.project + 'node_modules/zen-grids/sass'
   ],
   outputStyle: 'expanded'
 };
@@ -214,7 +216,7 @@ gulp.task('styleguide:debug', ['clean:styleguide', 'styleguide:kss-example-chrom
 // #########################
 // Lint Sass and JavaScript.
 // #########################
-gulp.task('lint', ['lint:sass', 'lint:js']);
+gulp.task('lint', ['lint:js']);
 
 // Lint JavaScript.
 gulp.task('lint:js', function () {

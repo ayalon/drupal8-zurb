@@ -12,7 +12,7 @@
 # The name, description and screenshot used for this theme on the Appearance
 # page at admin/appearance.
 
-name: Zurby
+name: Zurb styleguide theme
 description: Read the <a href="https://drupal.org/node/873778">online docs</a> or the included README.txt on how to create a theme with Zen.<p class="messages color-error">The Zen theme <em><b>requires</b></em> the <a href="https://www.drupal.org/project/components">Components Libraries module</a> in order to function properly.</p>
 screenshot: screenshot.png
 
@@ -122,3 +122,4 @@ regions:
   # html.html.twig to work properly, so do not delete them.
   page_top: 'Page top'
   page_bottom: 'Page bottom'
+
