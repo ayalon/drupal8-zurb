@@ -23,8 +23,6 @@ $support-for: (
   '*': -4,
 );
 
-$preview-color: $light-gray;
-
 // Miscellaneous variables
 //
 // `$indent-amount` controls the amount lists, blockquotes and comments are indented.
@@ -34,4 +32,4 @@ $preview-color: $light-gray;
 // weight: 10
 //
 // Style guide: sass.variables.misc
-$indent-amount: 2 * $global-font-size;
+$indent-amount: 25px;

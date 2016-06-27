@@ -12,28 +12,12 @@
  */
 #}
 {{ attach_library('zurby/messages') }}
-<div class="messages {{ modifier_class }}" role="contentinfo" {% if heading %}aria-label="{{ heading }}"{% endif %} {{ attributes }}>
-  {% if type == 'error' %}
-    <div role="alert">
-  {% endif %}
-
+<div class="callout {{ type }}" role="contentinfo" {% if heading %}aria-label="{{ heading }}"{% endif %} {{ attributes }} data-closable>
   {% block heading %}
     {% if heading %}
-      <h2 class="visually-hidden">{{ heading }}</h2>
+      <h5>{{ heading }}</h5>
     {% endif %}
   {% endblock heading %}
-
-  {% block icon %}
-    <div class="messages__icon">
-      {% if type == 'error' %}
-        {% include "@zurby/components/messages/messages-icon-error.svg" %}
-      {% elseif type == 'warning' %}
-        {% include "@zurby/components/messages/messages-icon-warning.svg" %}
-      {% else %}
-        {% include "@zurby/components/messages/messages-icon-status.svg" %}
-      {% endif %}
-    </div>
-  {% endblock icon %}
 
   {% block content %}
     {% if messages|length > 1 %}
@@ -47,7 +31,9 @@
     {% endif %}
   {% endblock content %}
 
-  {% if type == 'error' %}
-    </div>
-  {% endif %}
+  {%  block closable %}
+    <button class="close-button" aria-label="Dismiss {{ type }}" type="button" data-close>
+      <span aria-hidden="true">&times;</span>
+    </button>
+  {%  endblock closable %}
 </div>

@@ -1,0 +1,10 @@
+// Zurb Foundation Core
+@import 'foundation';
+@import 'motion-ui';
+
+// Set flex to true to enable the new Foundation 6 flex grid.
+$flex: false;
+@include foundation-everything($flex);
+
+@include motion-ui-transitions;
+@include motion-ui-animations;

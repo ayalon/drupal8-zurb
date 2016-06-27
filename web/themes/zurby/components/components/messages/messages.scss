@@ -10,7 +10,7 @@
 // The icon shown is not part of the CSS; it is an SVG image in the HTML.
 //
 // .messages--warning - Warning messages
-// .messages--error - Error messages
+// .messages--alert - Error messages
 //
 // Markup: messages.twig
 //
@@ -54,7 +54,7 @@
   }
 
   &__list {
-    margin: 0;
+
   }
 
   &__item {

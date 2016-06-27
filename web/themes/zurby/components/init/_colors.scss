@@ -26,16 +26,17 @@ $chroma: add-colors((
   blue:                   #0072b9,
   red:                    #c00,
   yellow:                 #fd0,
+  liip-green:             #6ea644,
 ));
 
 // Define color names for functional uses.
 $chroma: define-color-scheme('functional', 'Colors used by functional parts of the design.');
 $chroma: add-colors('functional', (
   // Colors used in the main content area.
-  text:                   $body-font-color,
-  text-bg:                $body-background,
+  text:                   'black',
+  text-bg:                'white',
 
-  link:                   'blue',
+  link:                   'liip-green',
   link-visited:           ('blue' darken 20%),
   link-active:            'red',
 

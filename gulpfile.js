@@ -70,7 +70,7 @@ options.styleGuide = {
   mask: /\.less|\.sass|\.scss|\.styl|\.stylus/,
   destination: options.rootPath.styleGuide,
 
-  builder: 'builder/twig',
+  builder: options.theme.root + '/custom-builder',
   namespace: options.theme.name + ':' + options.theme.components,
   'extend-drupal8': true,
 
@@ -117,6 +117,9 @@ options.styleGuide = {
     path.relative(options.rootPath.styleGuide, options.theme.css + 'tabs.css')
   ],
   js: [
+    path.relative(options.rootPath.styleGuide, options.theme.root +  '/libraries/jquery/dist/jquery.min.js'),
+    path.relative(options.rootPath.styleGuide, options.theme.js + 'script.js'),
+    path.relative(options.rootPath.styleGuide, options.theme.root +  '/libraries/foundation-sites/dist/foundation.min.js')
   ],
 
   homepage: 'homepage.md',
@@ -267,11 +270,18 @@ gulp.task('watch:css', ['styles'], function () {
   return gulp.watch(options.theme.components + '**/*.scss', options.gulpWatchOptions, ['styles']);
 });
 
-gulp.task('watch:lint-and-styleguide', ['styleguide', 'lint:sass'], function () {
+// gulp.task('watch:lint-and-styleguide', ['styleguide', 'lint:sass'], function () {
+//   return gulp.watch([
+//     options.theme.components + '**/*.scss',
+//     options.theme.components + '**/*.twig'
+//   ], options.gulpWatchOptions, ['styleguide', 'lint:sass']);
+// });
+
+gulp.task('watch:lint-and-styleguide', ['styleguide'], function () {
   return gulp.watch([
     options.theme.components + '**/*.scss',
     options.theme.components + '**/*.twig'
-  ], options.gulpWatchOptions, ['styleguide', 'lint:sass']);
+  ], options.gulpWatchOptions, ['styleguide']);
 });
 
 gulp.task('watch:js', ['lint:js'], function () {
