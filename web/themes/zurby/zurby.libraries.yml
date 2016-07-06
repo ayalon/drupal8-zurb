@@ -9,9 +9,12 @@ base:
       # media. For example, you can specify this is a print media stylesheet by
       # specifying: { media: print } Note: this isn't recommended since
       # separate print stylesheets is bad for front-end performance.
+      components/asset-builds/css/zurb.css: {}
       components/asset-builds/css/base.css: {}
+      components/asset-builds/css/zurby.css: {}
   # If this library had JavaScript you could specify it like this:
-  # js:
+  js:
+      libraries/foundation-sites/dist/foundation.min.js: {}
   #   js/script.js: {}
   dependencies:
     - zurby/clearfix

@@ -1,0 +1,59 @@
+/*
+Error: File to import not found or unreadable: foundation.
+        on line 2 of init_zurb.scss
+
+1: // Zurb Foundation Core
+2: @import 'foundation';
+3: @import 'motion-ui';
+4: 
+5: // Set flex to true to enable the new Foundation 6 flex grid.
+6: $flex: false;
+7: @include foundation-everything($flex);
+
+Backtrace:
+init_zurb.scss:2
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/tree/import_node.rb:45:in `import'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:311:in `visit_import'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/stack.rb:79:in `block in with_base'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/stack.rb:115:in `with_frame'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/stack.rb:79:in `with_base'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/engine.rb:285:in `render_with_sourcemap'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/plugin.rb:82:in `update_stylesheets'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/exec/sass_scss.rb:361:in `watch_or_update'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/exec/base.rb:52:in `parse'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/exec/base.rb:19:in `parse!'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/bin/scss:13:in `<top (required)>'
+/Users/jonathanminder/.rvm/rubies/ruby-2.2.1/bin/scss:23:in `load'
+/Users/jonathanminder/.rvm/rubies/ruby-2.2.1/bin/scss:23:in `<main>'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1/bin/ruby_executable_hooks:15:in `eval'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1/bin/ruby_executable_hooks:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: foundation.\A         on line 2 of init_zurb.scss\A \A 1: // Zurb Foundation Core\A 2: @import 'foundation';\A 3: @import 'motion-ui';\A 4: \A 5: // Set flex to true to enable the new Foundation 6 flex grid.\A 6: $flex: false;\A 7: @include foundation-everything($flex);"; }

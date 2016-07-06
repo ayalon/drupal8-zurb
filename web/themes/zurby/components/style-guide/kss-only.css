@@ -1,0 +1,60 @@
+/*
+Error: File to import not found or unreadable: init.
+        on line 3 of kss-only.scss
+
+1: // sass-lint:disable no-ids
+2: 
+3: @import 'init';
+4: @import '../zurb';
+5: 
+6: // This file is used to add styles to the style guide and is not included in
+7: // the Drupal site. It gets included by the style guide by adding it to the
+8: // options.styleGuide.css object in gulpfile.js.
+
+Backtrace:
+kss-only.scss:3
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/tree/import_node.rb:45:in `import'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:311:in `visit_import'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/stack.rb:79:in `block in with_base'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/stack.rb:115:in `with_frame'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/stack.rb:79:in `with_base'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/engine.rb:285:in `render_with_sourcemap'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/plugin.rb:82:in `update_stylesheets'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/exec/sass_scss.rb:361:in `watch_or_update'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/exec/base.rb:52:in `parse'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/lib/sass/exec/base.rb:19:in `parse!'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.14/bin/scss:13:in `<top (required)>'
+/Users/jonathanminder/.rvm/rubies/ruby-2.2.1/bin/scss:23:in `load'
+/Users/jonathanminder/.rvm/rubies/ruby-2.2.1/bin/scss:23:in `<main>'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1/bin/ruby_executable_hooks:15:in `eval'
+/Users/jonathanminder/.rvm/gems/ruby-2.2.1/bin/ruby_executable_hooks:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: init.\A         on line 3 of kss-only.scss\A \A 1: // sass-lint:disable no-ids\A 2: \A 3: @import 'init';\A 4: @import '../zurb';\A 5: \A 6: // This file is used to add styles to the style guide and is not included in\A 7: // the Drupal site. It gets included by the style guide by adding it to the\A 8: // options.styleGuide.css object in gulpfile.js."; }
