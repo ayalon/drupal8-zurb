@@ -1,0 +1,22 @@
+uuid: 28a4215f-e039-49a2-b282-c8c46a861a48
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - zurby
+_core:
+  default_config_hash: QM_qz1EcDnA9jvYOMD2hh32iwT-zacBGj7y07otWAMM
+id: zurby_help
+theme: zurby
+region: help
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

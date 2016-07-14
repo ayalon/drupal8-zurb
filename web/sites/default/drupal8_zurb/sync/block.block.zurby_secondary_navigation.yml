@@ -1,0 +1,26 @@
+uuid: fc76cfc5-0bd2-4a08-b2aa-74653fb07d08
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - zurby
+_core:
+  default_config_hash: I3UcORhAHcUdL_BW5Cbzzu3cThAY7sdmDeNfN7KTpbU
+id: zurby_secondary_navigation
+theme: zurby
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Secondary navigation'
+  provider: system
+  label_display: '0'
+  level: 2
+  depth: 0
+visibility: {  }

@@ -1,0 +1,19 @@
+uuid: dabe26bc-3b13-4826-9bb0-56275a17cee7
+langcode: en
+status: true
+dependencies: {  }
+countryCode: EC
+format: "%recipient\n%organization\n%addressLine1\n%addressLine2\n%postalCode\n%locality"
+requiredFields:
+  - recipient
+  - addressLine1
+  - locality
+uppercaseFields:
+  - locality
+  - postalCode
+administrativeAreaType: null
+localityType: city
+dependentLocalityType: null
+postalCodeType: postal
+postalCodePattern: '(?:[A-Z]\d{4}[A-Z]|(?:[A-Z]{2})?\d{6})?'
+postalCodePrefix: null

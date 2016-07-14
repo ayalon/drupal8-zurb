@@ -1,0 +1,22 @@
+uuid: a1093a99-4af3-4617-b345-bb018f4786e6
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - zurby
+_core:
+  default_config_hash: l3KBUjrnJMnBf8VyUNgcAG_PEBzed7hN_jEJrWs1Pnk
+id: zurby_powered
+theme: zurby
+region: footer
+weight: 10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

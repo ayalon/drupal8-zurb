@@ -1,0 +1,26 @@
+uuid: 32c9d555-1af7-4cca-ade9-d0dfbf2d5478
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - zurby
+_core:
+  default_config_hash: 9J5ft5voRI9heyR7yoNJdzBPkPA0PBKbG31kQXPi_X8
+id: zurby_main_menu
+theme: zurby
+region: primary_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+visibility: {  }

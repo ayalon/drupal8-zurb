@@ -1,0 +1,20 @@
+uuid: 44ed1d9b-144f-4a81-872f-b328186f2f71
+langcode: en
+status: true
+dependencies:
+  theme:
+    - zurby
+_core:
+  default_config_hash: '-X_d4v3caigvu7_5yDzSZNGoY_VeCJ6ZcprMevcx3UY'
+id: zurby_page_title
+theme: zurby
+region: title
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

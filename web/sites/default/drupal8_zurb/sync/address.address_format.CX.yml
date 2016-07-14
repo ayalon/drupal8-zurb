@@ -1,0 +1,19 @@
+uuid: 9e28e2d2-d24a-4115-8c8f-bf0a0bc23a36
+langcode: en
+status: true
+dependencies: {  }
+countryCode: CX
+format: "%organization\n%recipient\n%addressLine1\n%addressLine2\n%locality %administrativeArea %postalCode"
+requiredFields:
+  - recipient
+  - addressLine1
+  - locality
+uppercaseFields:
+  - locality
+  - administrativeArea
+administrativeAreaType: province
+localityType: city
+dependentLocalityType: null
+postalCodeType: postal
+postalCodePattern: '6798'
+postalCodePrefix: null

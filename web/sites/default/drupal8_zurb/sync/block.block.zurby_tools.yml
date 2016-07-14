@@ -1,0 +1,26 @@
+uuid: 7c1dee6e-1877-4cc1-9b6b-6645df935205
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - zurby
+_core:
+  default_config_hash: wqQVzh4lsDWOF6Sp0-p7mk26mB1F0WJw3dZQuTJOBGU
+id: zurby_tools
+theme: zurby
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

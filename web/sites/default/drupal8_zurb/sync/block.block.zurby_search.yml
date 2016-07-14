@@ -1,0 +1,22 @@
+uuid: 30ee0e11-75cf-4e78-8a70-d5d05442ab40
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - zurby
+_core:
+  default_config_hash: _oTyMzssRI9lbWlFjfZ_GllNVzOgXBhCuZ1LhnU2tPk
+id: zurby_search
+theme: zurby
+region: sidebar_first
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+visibility: {  }

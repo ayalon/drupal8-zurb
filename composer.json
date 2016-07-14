@@ -24,6 +24,11 @@
         "drupal-composer/drupal-scaffold": "^1.3.1",
         "cweagans/composer-patches": "~1.0",
         "drupal/core": "~8.1",
+        "drush/drush": "~8.0",
+        "drupal/console": "~1.0",
+        "drupal/migrate_plus": "8.2.x-dev",
+        "drupal/migrate_source_json": "8.x-2.x-dev",
+        "drupal/migrate_tools": "8.2.x-dev",
         "drupal/adminimal_theme": "^8.1",
         "drupal/admin_toolbar": "^8.1",
         "drupal/address": "^8.1@beta",
@@ -32,8 +37,26 @@
         "drupal/config_devel": "8.1.x-dev",
         "drupal/features": "^8.1",
         "drupal/config_installer": "8.1.x-dev",
+        "drupal/devel": "8.*",
+        "drupal/search_api": "8.1.0-alpha15",
+        "drupal/components": "^8.1",
         "drupal/zen": "8.x-7.x-dev",
-        "drupal/components": "8.x-1.x-dev"
+        "drupal/focal_point": "^8.1@beta",
+        "drupal/metatag": "8.1.0-beta9",
+        "drupal/field_group": "8.x-1.x-dev",
+        "drupal/video_embed_field": "^8.1",
+        "drupal/media_entity_image": "^8.1",
+        "drupal/entity_browser": "^8.1@alpha",
+        "drupal/inline_entity_form": "8.x-1.x-dev",
+        "drupal/search_api_solr": "^8.1",
+        "drupal/shs": "8.x-1.x-dev",
+        "drupal/file_browser": "8.1.x-dev",
+        "drupal/paragraphs": "8.x-1.x-dev",
+        "drupal/geofield": "^8.1",
+        "drupal/field_collection": "8.1.x-dev",
+        "drupal/rules": "8.x-3.x-dev",
+        "drupal/scheduler": "8.x-1.x-dev",
+        "drupal/ds": "^8.2"
     },
     "require-dev": {
         "behat/mink": "~1.6",
@@ -76,6 +99,12 @@
         "patches": {
             "drupal/adminimal_theme": {
                 "Patch styles": "https://www.drupal.org/files/issues/adminimal_theme-fix-styles-for-admin-toolbar-2680689-7.patch"
+            },
+            "drupal/core": {
+                "Patch for migrate": "https://www.drupal.org/files/issues/source_plugins_have_a-2560795-64.patch",
+                "Number widget validation can break AJAX actions": "https://www.drupal.org/files/issues/drupal-fix_number_widget_errorElement-2614250-25.patch",
+                "Country Export": "https://www.drupal.org/files/issues/drupal_2684873_18.patch",
+                "Language Code Exception": "https://www.drupal.org/files/issues/2595535-74-config-translation-langcode-exception.patch"
             }
 
         }

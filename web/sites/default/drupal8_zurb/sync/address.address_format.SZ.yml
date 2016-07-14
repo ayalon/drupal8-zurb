@@ -1,0 +1,21 @@
+uuid: 8396eaea-571d-48f7-a5c5-c70725c15f31
+langcode: en
+status: true
+dependencies: {  }
+countryCode: SZ
+format: "%recipient\n%organization\n%addressLine1\n%addressLine2\n%locality\n%postalCode"
+requiredFields:
+  - recipient
+  - addressLine1
+  - locality
+uppercaseFields:
+  - addressLine1
+  - addressLine2
+  - locality
+  - postalCode
+administrativeAreaType: null
+localityType: city
+dependentLocalityType: null
+postalCodeType: postal
+postalCodePattern: '[HLMS]\d{3}'
+postalCodePrefix: null

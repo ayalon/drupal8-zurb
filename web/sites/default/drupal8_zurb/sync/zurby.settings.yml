@@ -1,0 +1,13 @@
+zen_rebuild_registry: 0
+_core:
+  default_config_hash: P5V06zRKs-pLgT92nugyuXkhg3tCsItyIcJqjLrjmaM
+features:
+  node_user_picture: 1
+  comment_user_picture: 1
+  comment_user_verification: 1
+  favicon: 1
+logo:
+  use_default: 0
+  path: themes/zurby/logo.png
+favicon:
+  use_default: 1

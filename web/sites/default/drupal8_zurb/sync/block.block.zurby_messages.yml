@@ -1,0 +1,22 @@
+uuid: 08bb062a-8c7f-4836-9769-d92406597b86
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - zurby
+_core:
+  default_config_hash: ytwn2ClG7og4Ce9zc6IVpXIlzQunXyVftUWz4uy9i5U
+id: zurby_messages
+theme: zurby
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

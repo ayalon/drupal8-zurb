@@ -1,0 +1,17 @@
+uuid: 65dbfd8b-1889-4014-9c55-b59d3add08e4
+langcode: en
+status: true
+dependencies: {  }
+countryCode: VG
+format: "%recipient\n%organization\n%addressLine1\n%addressLine2\n%locality\n%postalCode"
+requiredFields:
+  - recipient
+  - addressLine1
+uppercaseFields:
+  - locality
+administrativeAreaType: null
+localityType: city
+dependentLocalityType: null
+postalCodeType: postal
+postalCodePattern: 'VG\d{4}'
+postalCodePrefix: null

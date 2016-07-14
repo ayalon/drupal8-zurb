@@ -1,0 +1,18 @@
+uuid: 2a804674-9bf4-4a5c-b9fc-37f8f0d80867
+langcode: en
+status: true
+dependencies: {  }
+countryCode: TN
+format: "%recipient\n%organization\n%addressLine1\n%addressLine2\n%postalCode %locality"
+requiredFields:
+  - recipient
+  - addressLine1
+  - locality
+uppercaseFields:
+  - locality
+administrativeAreaType: null
+localityType: city
+dependentLocalityType: null
+postalCodeType: postal
+postalCodePattern: '\d{4}'
+postalCodePrefix: null

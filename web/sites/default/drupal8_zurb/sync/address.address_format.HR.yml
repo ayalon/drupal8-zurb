@@ -1,0 +1,18 @@
+uuid: c173fe20-f894-4fed-ac0d-04c07bb2305a
+langcode: en
+status: true
+dependencies: {  }
+countryCode: HR
+format: "%recipient\n%organization\n%addressLine1\n%addressLine2\n%postalCode %locality"
+requiredFields:
+  - recipient
+  - addressLine1
+  - locality
+uppercaseFields:
+  - locality
+administrativeAreaType: null
+localityType: city
+dependentLocalityType: null
+postalCodeType: postal
+postalCodePattern: '\d{5}'
+postalCodePrefix: HR-

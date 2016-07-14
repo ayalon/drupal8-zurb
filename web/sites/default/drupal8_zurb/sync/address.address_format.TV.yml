@@ -1,0 +1,21 @@
+uuid: 98f0fe0a-1846-4e4f-b0b8-307467ed0c2d
+langcode: en
+status: true
+dependencies: {  }
+countryCode: TV
+format: "%recipient\n%organization\n%addressLine1\n%addressLine2\n%sortingCode\n%locality\n%administrativeArea"
+requiredFields:
+  - recipient
+  - addressLine1
+  - locality
+uppercaseFields:
+  - addressLine1
+  - addressLine2
+  - locality
+  - administrativeArea
+administrativeAreaType: island
+localityType: city
+dependentLocalityType: null
+postalCodeType: null
+postalCodePattern: null
+postalCodePrefix: null

@@ -1,0 +1,22 @@
+uuid: 9c30e250-80a6-4795-b12c-a106599cb004
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - zurby
+_core:
+  default_config_hash: Cg6eCubprjYQhp_YS3d7SWnkls_Ld-SDxRbYHajLnyA
+id: zurby_breadcrumbs
+theme: zurby
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

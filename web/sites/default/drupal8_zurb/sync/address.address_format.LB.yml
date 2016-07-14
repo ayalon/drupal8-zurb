@@ -1,0 +1,18 @@
+uuid: 731206a3-bac8-49d8-a4c5-c1d238853861
+langcode: en
+status: true
+dependencies: {  }
+countryCode: LB
+format: "%recipient\n%organization\n%addressLine1\n%addressLine2\n%locality %postalCode"
+requiredFields:
+  - recipient
+  - addressLine1
+  - locality
+uppercaseFields:
+  - locality
+administrativeAreaType: null
+localityType: city
+dependentLocalityType: null
+postalCodeType: postal
+postalCodePattern: '(?:(?:\d{4})(?:[ ]?(?:\d{4}))?)?'
+postalCodePrefix: null

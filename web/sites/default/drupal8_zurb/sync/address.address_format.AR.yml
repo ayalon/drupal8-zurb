@@ -1,0 +1,21 @@
+uuid: bd2af47a-1852-4b1e-9f08-9749ef950a47
+langcode: en
+status: true
+dependencies: {  }
+countryCode: AR
+format: "%recipient\n%organization\n%addressLine1\n%addressLine2\n%postalCode %locality\n%administrativeArea"
+requiredFields:
+  - recipient
+  - addressLine1
+  - locality
+uppercaseFields:
+  - addressLine1
+  - addressLine2
+  - locality
+  - postalCode
+administrativeAreaType: province
+localityType: city
+dependentLocalityType: null
+postalCodeType: postal
+postalCodePattern: '((?:[A-HJ-NP-Z])?\d{4})([A-Z]{3})?'
+postalCodePrefix: null
